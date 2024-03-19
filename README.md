@@ -1,9 +1,9 @@
-## Search by song name
+# Search by song name
 
-- # URL: /register
-- # Type of request: POST
-- # Needed token: No
-- # Body of request:
+- ### URL: /register
+- ### Type of request: POST
+- ### Needed token: No
+- ### Body of request:
 
 ```json
 {
@@ -12,7 +12,7 @@
 
 ```
 
-Answer:
+- ### Answer:
 
 ```json
 {
