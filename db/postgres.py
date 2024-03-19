@@ -19,8 +19,6 @@ class Postgres:
             "from artist "
             "inner join albums on artist.artist_id = albums.id "
             "inner join songs on songs.album_id = albums.album_id "
-            #f"where #artist_name LIKE '%{prompt}%' "
-           # f"or album_name LIKE '%{prompt}%' "
             f"where song_title LIKE '%{prompt}%'"
             f"LIMIT 1;"
         )
@@ -29,7 +27,7 @@ class Postgres:
         try:
             result_value = self.client.cursor.fetchall()[0]
             return SongModel(song_name=result_value[2],
-                         artist=result_value[0],
-                         album=result_value[1])
+                             artist=result_value[0],
+                             album=result_value[1])
         except IndexError as err:  # if song dont exist
             return False

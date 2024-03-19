@@ -4,7 +4,7 @@ import pytest
 @pytest.fixture()
 def prompt_data():
     data = {
-            "prompt": "Король",
+            "prompt": "Smells like Teen Spirit",
             }
     return data
 

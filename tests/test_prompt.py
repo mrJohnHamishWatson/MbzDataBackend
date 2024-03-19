@@ -7,10 +7,7 @@ def test_get_events_by_user(base_url, prompt_data):
 
     # Define the request body
 
-    headers = {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    }
+    headers = {"Content-Type": "application/json", "Accept": "application/json"}
 
     # Send the POST request
     response = requests.post(url, json=prompt_data, headers=headers)
@@ -21,4 +18,3 @@ def test_get_events_by_user(base_url, prompt_data):
     # Assert the response body or perform other validations as needed
     response_data = response.json()
     print(response_data)
-
