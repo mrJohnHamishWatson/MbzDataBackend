@@ -1,6 +1,6 @@
 # Search by song name
 
-- ### URL: /register
+- ### URL: `/search`
 - ### Type of request: POST
 - ### Needed token: No
 - ### Body of request:
